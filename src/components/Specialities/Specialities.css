@@ -35,5 +35,14 @@
   color: #c4213b;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+}
+
+.specialities__logo {
+}
+
+.specialities__description {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0;
 }

@@ -1,6 +1,6 @@
 export default function Specialities() {
   return (
-    <div className="specialities">
+    <section className="specialities">
       <h1 className="specialities__title">Especialidades</h1>
       <div className="specialities__cards">
         <div className="specialities__card">
@@ -60,6 +60,6 @@ export default function Specialities() {
           <p className="specialities__description">Burnout</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
