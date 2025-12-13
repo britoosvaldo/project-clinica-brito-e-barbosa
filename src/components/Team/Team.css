@@ -1,21 +1,25 @@
 .team {
-  padding: 40px 20px;
+  background-color: #fff0f5;
+  height: 750px;
 }
 
 .team__title {
-  text-align: center;
-  margin-bottom: 24px;
+  font-size: 36px;
+  color: #c4213b;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 40px;
 }
 
 .team__carousel {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 30px;
 }
 
 .team__cards {
   display: flex;
-  gap: 16px;
+  gap: 50px;
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -26,15 +30,29 @@
 }
 
 .team__card {
-  min-width: 260px;
-  height: 320px;
-  background: #fff;
-  border-radius: 16px;
+  width: 375px;
+  height: 510px;
+  background: #fefcf8;
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.person__photo {
+}
+
+.person__name {
+}
+
+.person__document {
+}
+
+.person__skills {
 }
 
 .team__arrow {
