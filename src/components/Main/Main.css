@@ -19,6 +19,7 @@
   justify-content: center;
   align-items: center;
   padding: 100px 0 0 0;
+  font-family: "Roboto";
 }
 
 .main__photo {
@@ -34,6 +35,8 @@
 
 .main__description {
   grid-area: description;
+  font-size: 20px;
+  line-height: 1.3;
 }
 
 .main__bt {
@@ -50,4 +53,5 @@
   font-family: "Roboto";
   font-weight: bold;
   border: #c11d40;
+  cursor: pointer;
 }
