@@ -14,6 +14,7 @@ export default function About() {
             potencialidades através de atendimento especializado e humanizado.
           </p>
         </div>
+        <div class="separator"></div>
         <div className="about__principles">
           <img
             src="./src/images/visao-icone.png"
@@ -25,6 +26,7 @@ export default function About() {
             pacientes, profissionais e a comunidade.
           </p>
         </div>
+        <div class="separator"></div>
         <div className="about__principles">
           <img
             src="./src/images/valores-icone.png"

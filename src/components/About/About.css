@@ -6,6 +6,12 @@
   color: #000000;
 }
 
+.separator {
+  width: 4px; /* espessura da linha */
+  height: 260px; /* altura da linha */
+  background-color: #c4213b; /* rosa/vermelho (ajuste se quiser) */
+}
+
 .about__title {
   font-size: 36px;
   margin: 0;
@@ -15,9 +21,9 @@
 
 .about__grid {
   display: grid;
-  grid-template-columns: repeat(3, 260px);
+  grid-template-columns: 260px 3px 260px 3px 260px;
   grid-template-rows: 300px;
-  column-gap: 100px;
+  column-gap: 50px;
   justify-content: center;
   align-items: center;
 }
