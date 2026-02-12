@@ -12,11 +12,31 @@ export default function Header() {
           src="./src/images/raciocionio-logo.png"
         />
       </nav>
-      <nav className="nav">
-        <a className="nav__description">Início</a>
-        <a className="nav__description">Sobre Nós</a>
-        <a className="nav__description">Contatos</a>
-      </nav>
+      <ul className="nav__links">
+        <li>
+          <a className="nav__link" href="#about">
+            Início
+          </a>
+        </li>
+        <li>
+          <a className="nav__link" href="#projects">
+            Especialidades
+          </a>
+        </li>
+        <li>
+          <a className="nav__link" href="#contacts">
+            Sobre Nós
+          </a>
+        </li>
+        <li>
+          <a className="nav__link" href="#contacts">
+            Nossa Equipe
+          </a>
+        </li>
+        <li>
+          <button className="nav__link nav__button">Agendar Consulta</button>
+        </li>
+      </ul>
     </header>
   );
 }

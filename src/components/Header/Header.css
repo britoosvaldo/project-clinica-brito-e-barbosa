@@ -27,3 +27,23 @@
 .nav__description {
   cursor: pointer;
 }
+
+.nav__links {
+  display: flex;
+  column-gap: 40px;
+  list-style-type: none;
+  align-items: center;
+  padding: 0 50px 0 0;
+}
+
+.nav__link {
+  font-family: "Inter";
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #c4213b;
+}
+
+.nav__link:hover {
+  color: #000000;
+}

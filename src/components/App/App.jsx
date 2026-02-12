@@ -5,7 +5,6 @@ import Specialities from "../Specialities/Specialities";
 import About from "../About/About";
 import Team from "../Team/Team";
 import Footer from "../Footer/Footer";
-import "./App.css";
 
 function App() {
   return (
