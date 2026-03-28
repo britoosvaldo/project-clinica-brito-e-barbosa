@@ -20,10 +20,12 @@ export default function Team() {
   return (
     <section className="team">
       <h3 className="team__title">Nossa Equipe</h3>
+
       <div className="team__carousel">
         <button className="team__arrow team__arrow--left" onClick={scrollLeft}>
           <img src="./src/images/seta-esquerda.png" />
         </button>
+
         <div className="team__cards" ref={trackRef}>
           <div className="team__card">
             <img className="person__photo" src="./src/images/jussara.png" />
@@ -33,6 +35,7 @@ export default function Team() {
               Neuropsicóloga<br></br>TCC
             </p>
           </div>
+
           <div className="team__card">
             <img className="person__photo" src="./src/images/gabi.png" />
             <h4 className="person__name">Gabrielle Brito</h4>

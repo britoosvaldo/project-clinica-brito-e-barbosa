@@ -1,9 +1,15 @@
+import useRevealOnScroll from "../../hooks/useRevealOnScroll";
+
 export default function Main() {
+  useRevealOnScroll();
+
   return (
-    <main className="main">
+    <main className="main" style={{ "--delay": "0ms" }}>
       <img className="main__photo" src="./src/images/header-img.png"></img>
-      <h1 className="main__title">Importância da Saúde Mental</h1>
-      <p className="main__description">
+      <h1 className="main__title">
+        Importância da <span>Saúde Mental</span>
+      </h1>
+      <p className="main__subtitle">
         A saúde mental é um dos pilares fundamentais para uma vida equilibrada.
         Ela influencia diretamente nossa capacidade de lidar com emoções,
         enfrentar desafios, manter relacionamentos saudáveis e tomar decisões
@@ -18,7 +24,12 @@ export default function Main() {
         Investir na saúde mental não é sinal de fraqueza, mas sim de coragem e
         maturidade — é um ato de amor consigo mesmo.
       </p>
-      <button className="main__bt">Agendar Atendimento</button>
+      <div className="main__buttons">
+        <button className="main__bt-budget">Agendar Atendimento</button>
+        <button className="main__bt-specialities">
+          Conhecer Especialidades
+        </button>
+      </div>
     </main>
   );
 }
