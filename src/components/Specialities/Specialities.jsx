@@ -7,7 +7,7 @@ export default function Services() {
   return (
     <section className="specialities" id="specialities">
       <div className="specialities__start reveal">
-        <h2 className="specialities_top">Nossos Serviços</h2>
+        <h2 className="specialities__top">Nossos Serviços</h2>
       </div>
 
       <h3 className="specialities__title">Especialidades</h3>
@@ -19,13 +19,17 @@ export default function Services() {
 
       <div className="specialities__grid">
         {specialitiesData.map((specialitie) => (
-          <div className="specialities__card reveal" key={specialitie.id}>
-            <img
-              className="specialities-card__icon"
-              src={specialitie.icon}
-              alt={specialitie.title}
-            />
+          <div className="specialities-card reveal" key={specialitie.id}>
+            <div className="specialities-card__circle">
+              <img
+                className="specialities-card__icon"
+                src={specialitie.icon}
+                alt={specialitie.title}
+              />
+            </div>
+
             <h3 className="specialities-card__title">{specialitie.title}</h3>
+
             <p className="specialities-card__description">
               {specialitie.description}
             </p>
