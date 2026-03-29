@@ -9,9 +9,9 @@
   column-gap: 80px;
   row-gap: 30px;
   grid-template-areas:
-    "photo title "
-    "photo description "
-    "photo button ";
+    "photo title"
+    "photo description"
+    "photo button";
   justify-content: center;
   align-items: center;
   padding: 200px 0 0 0;

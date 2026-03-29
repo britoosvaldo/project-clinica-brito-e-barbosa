@@ -1,51 +1,109 @@
 .about {
   width: 100%;
-  height: 484px;
+  height: 100%;
   background-color: #fefcf8;
   font-family: "Roboto";
   color: #000000;
 }
 
-.separator {
-  width: 4px;
-  height: 260px;
-  background-color: #c4213b;
+.about__start {
+  width: 155px;
+  height: 30px;
+  border: 1px solid #ffc2d5;
+  display: flex;
+  background-color: #ffc2d5;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  margin: 50px 0 20px 0;
+}
+
+.about__top {
+  margin: 0;
+  font-size: 15px;
+  align-self: center;
 }
 
 .about__title {
+  align-self: center;
+  justify-self: center;
   font-size: 36px;
-  margin: 0;
-  padding: 40px;
+  font-family: "Roboto";
   color: #c4213b;
+  margin: 0 0 20px 0;
+}
+
+.about__subtitle {
+  width: 650px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: 18px;
+  margin: 0 0 30px 0;
+  color: #8d8d8d;
 }
 
 .about__grid {
   display: grid;
-  grid-template-columns: 260px 3px 260px 3px 260px;
-  grid-template-rows: 300px;
-  column-gap: 75px;
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: repeat(2, 260px);
+  gap: 30px;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 
-.about__principles {
-  width: 260px;
-  height: 300px;
-  place-items: center;
-  text-align: center;
+.about-card {
+  width: 360px;
+  height: 250px;
+  background-color: #ffffff;
+  border: 1px solid #ffdae5;
+  border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.principles__icon {
-  width: 100px;
-  height: 100px;
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.priciples__title {
-  margin: 0;
-  font-size: 36px;
-  font-weight: bold;
+.about-card__circle {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  background-color: #ffa1bf;
+  border-radius: 100px;
+  width: 55px;
+  height: 55px;
+  margin: 30px 0 0 0;
 }
 
-.priciples__description {
+.about-card__icon {
+  align-self: center;
+  width: 35px;
+  height: 35px;
+  background-color: #ffa1bf;
+  border-radius: 100px;
+}
+
+.about-card__title {
+  justify-self: center;
   font-size: 20px;
+  margin: 20px 0 0 0;
+}
+
+.about-card__description {
+  width: 300px;
+  justify-self: center;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.about-highlights {
+  width: 1140px;
+  height: 250px;
+  background-color: #fae9ee;
+  border-radius: 10px;
 }
