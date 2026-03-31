@@ -2,21 +2,58 @@
   background-color: #fff0f5;
   height: 750px;
   font-family: "Roboto";
-  color: #c4213b;
+
+  padding: 40px 0;
+}
+
+.team__start {
+  width: 155px;
+  height: 30px;
+  border: 1px solid #ffc2d5;
+  display: flex;
+  background-color: #ffc2d5;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+
+.team__top {
+  margin: 0;
+  font-size: 15px;
+  align-self: center;
 }
 
 .team__title {
+  display: flex;
+  align-self: center;
+  justify-self: center;
   font-size: 36px;
   font-family: "Roboto";
-  margin: 0;
-  padding: 40px;
+  color: #c4213b;
+  margin: 0 0 20px 0;
+}
+
+.team__subtitle {
+  display: flex;
+  width: 650px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: 18px;
+  margin: 0 0 30px 0;
+  color: #8d8d8d;
 }
 
 .team__carousel {
   display: flex;
+  justify-self: center;
   align-items: center;
+  width: 1400px;
   gap: 30px;
   height: 530px;
+  margin: 0 60px;
 }
 
 .team__cards {
@@ -27,13 +64,9 @@
   scrollbar-width: none;
 }
 
-.team__cards::-webkit-scrollbar {
-  display: none;
-}
-
 .team__card {
   width: 375px;
-  height: 510px;
+  height: 460px;
   background: #fefcf8;
   flex-shrink: 0;
   align-items: center;
@@ -42,10 +75,23 @@
   justify-content: flex-start;
   border-radius: 25px;
   border: #000;
-  border: 3px solid #c4213b;
+  border: 1px solid #ffdae5;
+}
+
+.team-card__back {
+  background-color: #f2d4de;
+  width: 375px;
+  height: 230px;
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .person__photo {
+  width: 168px;
+  height: 168px;
+  border-radius: 100px;
   padding: 5px;
 }
 

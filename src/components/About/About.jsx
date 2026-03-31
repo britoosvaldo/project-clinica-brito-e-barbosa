@@ -51,19 +51,45 @@ export default function About() {
           </p>
         </div>
 
-        <div className="about-highlights">
-          <h3>Por que nos escolher?</h3>
-          <p>
-            Com anos de experiência no cuidado da saúde mental, nossa equipe é
-            formada por profissionais altamente qualificados e comprometidos com
-            o seu bem-estar.
-          </p>
-          <ul>
-            <li>Ambiente humanizado e personalizado</li>
-            <li>Ambiente acolhedor e confortável</li>
-            <li>Equipe multidisciplinar especializada</li>
-            <li>Sigilo e ética profissional</li>
-          </ul>
+        <div className="about-high">
+          <div className="about-high__informations">
+            <h3 className="about-high__title">Por que nos escolher?</h3>
+            <p className="about-high__subtitle">
+              Com anos de experiência no cuidado da saúde mental, nossa equipe é
+              formada por profissionais altamente qualificados e comprometidos
+              com o seu bem-estar.
+            </p>
+            <ul className="about-high__list">
+              <li className="about-high__item">
+                Ambiente humanizado e personalizado
+              </li>
+              <li className="about-high__item">
+                Ambiente acolhedor e confortável
+              </li>
+              <li className="about-high__item">
+                Equipe multidisciplinar especializada
+              </li>
+              <li className="about-high__item">Sigilo e ética profissional</li>
+            </ul>
+          </div>
+          <div className="about-high__cards">
+            <div className="about-high__card">
+              <h3 className="about-high__number">500+</h3>
+              <p className="about-high__text">Pacientes Atendidos</p>
+            </div>
+            <div className="about-high__card">
+              <h3 className="about-high__number">10+</h3>
+              <p className="about-high__text">Anos de Experiência</p>
+            </div>
+            <div className="about-high__card">
+              <h3 className="about-high__number">8+</h3>
+              <p className="about-high__text">Especialidades</p>
+            </div>
+            <div className="about-high__card">
+              <h3 className="about-high__number">100%</h3>
+              <p className="about-high__text">Dedicação</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

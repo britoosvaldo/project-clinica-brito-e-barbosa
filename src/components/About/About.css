@@ -4,6 +4,8 @@
   background-color: #fefcf8;
   font-family: "Roboto";
   color: #000000;
+  padding: 50px 0;
+  font-family: "Roboto";
 }
 
 .about__start {
@@ -16,7 +18,7 @@
   justify-self: center;
   align-self: center;
   justify-content: center;
-  margin: 50px 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 .about__top {
@@ -101,9 +103,62 @@
   margin: 20px 0 0 0;
 }
 
-.about-highlights {
+.about-high {
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
   width: 1140px;
   height: 250px;
   background-color: #fae9ee;
   border-radius: 10px;
+}
+
+.about-high__informations {
+  margin: 10px 0 0 40px;
+}
+.about-high__title {
+  font-size: 26px;
+  margin: 15px 0;
+}
+.about-high__subtitle {
+  margin: 0;
+}
+.about-high__list {
+  margin-top: 5px;
+  line-height: 1.5;
+}
+.about-high__item {
+}
+
+.about-high__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 210px);
+  grid-template-rows: repeat(2, 90px);
+  gap: 20px;
+  margin: auto;
+}
+.about-high__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 90px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ffdae5;
+}
+
+.about-high__number {
+  color: #c4213b;
+  font-size: 26px;
+  margin: 0;
+}
+
+.about-high__text {
+  font-size: 15px;
+  margin: 0;
+}
+
+li::marker {
+  color: #c4213b;
 }
