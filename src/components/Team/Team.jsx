@@ -18,7 +18,7 @@ export default function Team() {
   };
 
   return (
-    <section className="team">
+    <section className="team" id="team">
       <div className="team__start">
         <h2 className="team__top">Profissionais</h2>
       </div>

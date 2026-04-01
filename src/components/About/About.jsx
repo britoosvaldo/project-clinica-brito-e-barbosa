@@ -4,7 +4,7 @@ import valoresIcon from "../../images/valores-icon.svg";
 
 export default function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about__start">
         <h2 className="about__top">Conheça-nos</h2>
       </div>

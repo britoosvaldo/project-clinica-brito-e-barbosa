@@ -1,4 +1,5 @@
 import useRevealOnScroll from "../../hooks/useRevealOnScroll";
+import arrowIcon from "../../images/arrow-icon.svg";
 
 export default function Main() {
   useRevealOnScroll();
@@ -25,7 +26,10 @@ export default function Main() {
         maturidade — é um ato de amor consigo mesmo.
       </p>
       <div className="main__buttons">
-        <button className="main__bt-budget">Agendar Atendimento</button>
+        <button className="main__bt-budget">
+          Agendar Atendimento
+          <img className="bt__icon" src={arrowIcon} />
+        </button>
         <button className="main__bt-specialities">
           Conhecer Especialidades
         </button>

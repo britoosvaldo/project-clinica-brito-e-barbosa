@@ -26,15 +26,31 @@
   border: 1px solid #e3cbcb;
 }
 
-.nav__logo {
-  width: 230px;
+.nav__logos {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__logo1 {
+  height: 80px;
   align-self: center;
   margin: 0 0 0 50px;
 }
 
+.nav__logo2 {
+  width: 230px;
+  align-self: center;
+  margin: 0 0 0 15px;
+}
+
+.nav__logo3 {
+  align-self: center;
+  margin: 0 0 0 15px;
+}
+
 .nav__links {
   display: flex;
-  column-gap: 60px;
+  column-gap: 45px;
   list-style-type: none;
   align-items: center;
   padding: 0 50px 0 0;
@@ -51,7 +67,7 @@
 }
 
 .nav__link:hover {
-  color: #000000;
+  color: #ffa1bf;
 }
 
 .nav__button {

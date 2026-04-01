@@ -11,7 +11,7 @@ import instaIcon from "../../images/instagram-icon.svg";
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="footer__content">
         <div className="footer__left">
           <div className="footer__logos">

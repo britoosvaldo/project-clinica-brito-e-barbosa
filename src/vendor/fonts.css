@@ -33,3 +33,15 @@
   font-family: "Roboto Slab";
   font-weight: bold;
 }
+
+@font-face {
+  src: url(./fonts/AROneSans-Bold.woff2) format(woff2);
+  font-family: "AR One Sans";
+  font-weight: bold;
+}
+
+@font-face {
+  src: url(./fonts/AROneSans-Regular.woff2) format(woff2);
+  font-family: "AR One Sans";
+  font-weight: normal;
+}

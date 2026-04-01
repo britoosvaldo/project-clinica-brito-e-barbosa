@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import mpLogo from "../../images/brito-e-barbosa-logo.png";
+import jussaraLogo from "../../images/jussara-logo.svg";
+import britoLogo from "../../images/brito-e-barbosa-logo.png";
+import raciocinioLogo from "../../images/raciocinio-logo.svg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +21,11 @@ export default function Header() {
       <nav
         className={`nav ${isOpen ? "nav--open" : ""} ${isScrolled ? "nav--scrolled" : ""}`}
       >
-        <img className="nav__logo" src={mpLogo} alt="Logo" />
+        <div className="nav__logos">
+          <img className="nav__logo1" src={jussaraLogo} alt="Logo" />
+          <img className="nav__logo2" src={britoLogo} alt="Logo" />
+          <img className="nav__logo3" src={raciocinioLogo} alt="Logo" />
+        </div>
 
         <button
           type="button"
@@ -46,7 +52,7 @@ export default function Header() {
           <li>
             <a
               className="nav__link"
-              href="#services"
+              href="#specialities"
               onClick={() => setIsOpen(false)}
             >
               Especialidades
@@ -55,7 +61,7 @@ export default function Header() {
           <li>
             <a
               className="nav__link"
-              href="#projects"
+              href="#about"
               onClick={() => setIsOpen(false)}
             >
               Sobre Nós
@@ -64,7 +70,7 @@ export default function Header() {
           <li>
             <a
               className="nav__link"
-              href="#about"
+              href="#team"
               onClick={() => setIsOpen(false)}
             >
               Nossa Equipe
@@ -73,7 +79,7 @@ export default function Header() {
           <li>
             <a
               className="nav__link"
-              href="#contacts"
+              href="#footer"
               onClick={() => setIsOpen(false)}
             >
               Contatos

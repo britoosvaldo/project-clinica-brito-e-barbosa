@@ -61,6 +61,7 @@
   border: #c11d40;
   cursor: pointer;
   background-color: #c11d40;
+  transition: transform 0.3s ease;
 }
 
 .main__bt-specialities {
@@ -76,4 +77,14 @@
   border: 1px solid #e3cbcb;
   cursor: pointer;
   background-color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.main__bt-budget:hover,
+.main__bt-specialities:hover {
+  transform: scale(1.05);
+}
+
+.bt__icon {
+  padding: 0 0 0 10px;
 }
