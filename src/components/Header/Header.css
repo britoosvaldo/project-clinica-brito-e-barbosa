@@ -96,7 +96,7 @@
   width: 26px;
   height: 2px;
   margin: 7px auto;
-  background-color: #ffffff;
+  background-color: #c4213b;
   transition: all 0.2s ease;
 }
 
@@ -122,6 +122,24 @@
 }
 
 @media screen and (max-width: 750px) {
+  .nav__logo1 {
+    height: 50px;
+    align-self: center;
+    margin: 0 0 0 10px;
+  }
+
+  .nav__logo2 {
+    width: 100px;
+    align-self: center;
+    margin: 0 0 0 15px;
+  }
+
+  .nav__logo3 {
+    width: 100px;
+    align-self: center;
+    margin: 0 0 0 15px;
+  }
+
   .nav__toggle {
     display: block;
     align-self: center;

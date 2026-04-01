@@ -146,3 +146,92 @@
 .team__arrow:hover {
   opacity: 0.7;
 }
+
+@media screen and (max-width: 750px) {
+  .team {
+    padding: 20px 0;
+    height: 100%;
+  }
+
+  .team__start {
+    width: 125px;
+    height: 20px;
+    margin: 20px 0 20px 0;
+  }
+
+  .team__top {
+    font-size: 10px;
+  }
+
+  .team__title {
+    font-size: 26px;
+  }
+
+  .team__subtitle {
+    width: 275px;
+    margin: 0 0 30px 0;
+    font-size: 14px;
+  }
+
+  .team__carousel {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 361px;
+    gap: 10px;
+    height: 400px;
+    margin: 0 60px;
+  }
+
+  .team__cards {
+    height: 400px;
+    gap: 30px;
+  }
+
+  .team__card {
+    width: 265px;
+    height: 340px;
+  }
+
+  .team-card__back {
+    width: 265px;
+    height: 168px;
+  }
+
+  .person__photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .team__card:hover .person__photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .person__name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 0 0 0;
+    color: #c4213b;
+  }
+
+  .person__document {
+    font-size: 12px;
+    margin: 0;
+    color: #8d8d8d;
+  }
+
+  .person__skills {
+    font-size: 16px;
+    margin: 0;
+    padding: 30px 0 0 0;
+    text-align: center;
+  }
+
+  .team__arrow-left,
+  .team__arrow-right {
+    width: 25px;
+  }
+}

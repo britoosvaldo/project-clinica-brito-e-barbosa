@@ -116,17 +116,21 @@
 .about-high__informations {
   margin: 10px 0 0 40px;
 }
+
 .about-high__title {
   font-size: 26px;
   margin: 15px 0;
 }
+
 .about-high__subtitle {
   margin: 0;
 }
+
 .about-high__list {
   margin-top: 5px;
   line-height: 1.5;
 }
+
 .about-high__item {
 }
 
@@ -137,6 +141,7 @@
   gap: 20px;
   margin: auto;
 }
+
 .about-high__card {
   display: flex;
   flex-direction: column;
@@ -162,4 +167,127 @@
 
 li::marker {
   color: #c4213b;
+}
+
+@media screen and (max-width: 750px) {
+  .about {
+    padding: 20px 0;
+  }
+
+  .about__start {
+    width: 125px;
+    height: 20px;
+    margin: 20px 0 20px 0;
+  }
+
+  .about__top {
+    font-size: 10px;
+  }
+
+  .about__title {
+    font-size: 26px;
+  }
+
+  .about__subtitle {
+    width: 275px;
+    margin: 0 0 30px 0;
+    font-size: 14px;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 12px;
+    justify-items: center;
+  }
+
+  .about-card {
+    width: 220px;
+    height: 165px;
+    padding: 14px 10px 16px;
+    box-sizing: border-box;
+  }
+
+  .about-card__circle {
+    width: 34px;
+    height: 34px;
+    margin: 0 auto 10px;
+  }
+
+  .about-card__icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .about-card__title {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+
+  .about-card__description {
+    width: 100%;
+    margin: 0;
+    font-size: 10px;
+    line-height: 1.35;
+    text-align: center;
+  }
+
+  .about-high {
+    max-width: 300px;
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 16px 12px;
+    box-sizing: border-box;
+    margin: 24px auto 0;
+    border-radius: 8px;
+  }
+
+  .about-high__informations {
+    margin: 0;
+  }
+
+  .about-high__title {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+  }
+
+  .about-high__subtitle {
+    font-size: 11px;
+    line-height: 1.45;
+  }
+
+  .about-high__list {
+    margin: 10px 0 0 16px;
+    padding: 0;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .about-high__cards {
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: auto;
+  }
+
+  .about-high__card {
+    width: 120px;
+    height: 62px;
+    border-radius: 6px;
+  }
+
+  .about-high__number {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .about-high__text {
+    font-size: 9px;
+    text-align: center;
+    line-height: 1.2;
+  }
 }

@@ -1,11 +1,10 @@
 .main {
   width: 100%;
-  height: 620px;
+  min-height: 620px;
   background-color: #fdf8f9;
-  color: #ffffff;
   display: grid;
   grid-template-columns: 450px 706px;
-  grid-template-rows: 57px 350px 74px;
+  grid-template-rows: auto auto auto;
   column-gap: 80px;
   row-gap: 30px;
   grid-template-areas:
@@ -14,21 +13,35 @@
     "photo button";
   justify-content: center;
   align-items: center;
-  padding: 200px 0 0 0;
-  font-family: "Roboto";
+  padding: 120px 20px 60px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .main__photo {
   grid-area: photo;
   width: 450px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   justify-self: center;
+}
+
+.main__photo img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
 
 .main__title {
   grid-area: title;
   font-size: 48px;
+  line-height: 1.1;
+  font-weight: 700;
   color: #000000;
+  margin: 0;
 }
 
 .main__title span {
@@ -38,46 +51,45 @@
 .main__subtitle {
   grid-area: description;
   font-size: 20px;
-  line-height: 1.3;
+  line-height: 1.5;
   color: #828282;
+  margin: 0;
 }
 
 .main__buttons {
   grid-area: button;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+}
+
+.main__bt-budget,
+.main__bt-specialities {
+  height: 48px;
+  border-radius: 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .main__bt-budget {
   width: 234px;
-  height: 48px;
-  border-radius: 15px;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #ffffff;
-  font-family: "Roboto";
-  border: #c11d40;
-  cursor: pointer;
+  border: 1px solid #c11d40;
   background-color: #c11d40;
-  transition: transform 0.3s ease;
 }
 
 .main__bt-specialities {
   width: 248px;
-  height: 48px;
-  border-radius: 15px;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #000000;
-  font-family: "Roboto";
   border: 1px solid #e3cbcb;
-  cursor: pointer;
   background-color: #ffffff;
-  transition: transform 0.3s ease;
 }
 
 .main__bt-budget:hover,
@@ -86,5 +98,94 @@
 }
 
 .bt__icon {
-  padding: 0 0 0 10px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    padding: 100px 20px 50px;
+  }
+
+  .main__photo {
+    width: 100%;
+  }
+
+  .main__photo img {
+    max-width: 340px;
+  }
+
+  .main__title {
+    font-size: 38px;
+  }
+
+  .main__subtitle {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .main {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "photo"
+      "description"
+      "button";
+    row-gap: 28px;
+    padding: 150px 20px 50px;
+    justify-items: center;
+  }
+
+  .main__title {
+    width: 100%;
+    max-width: 340px;
+    font-size: 28px;
+    line-height: 1.15;
+    justify-self: center;
+  }
+
+  .main__photo {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .main__photo img {
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  .main__subtitle {
+    width: 100%;
+    max-width: 340px;
+    font-size: 14px;
+    line-height: 1.45;
+    color: #8a8a8a;
+    text-align: left;
+  }
+
+  .main__buttons {
+    width: 100%;
+    max-width: 340px;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .main__bt-budget,
+  .main__bt-specialities {
+    width: 100%;
+    max-width: 260px;
+    height: 46px;
+    font-size: 14px;
+    border-radius: 999px;
+  }
+
+  .bt__icon {
+    padding-left: 8px;
+  }
 }

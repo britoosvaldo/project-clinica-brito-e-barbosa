@@ -31,8 +31,11 @@ export default function Team() {
       </p>
 
       <div className="team__carousel">
-        <button className="team__arrow team__arrow--left" onClick={scrollLeft}>
-          <img src="./src/images/seta-esquerda.png" />
+        <button className="team__arrow" onClick={scrollLeft}>
+          <img
+            className="team__arrow-left"
+            src="./src/images/seta-esquerda.png"
+          />
         </button>
 
         <div className="team__cards" ref={trackRef}>
@@ -88,11 +91,11 @@ export default function Team() {
             </p>
           </div>
         </div>
-        <button
-          className="team__arrow team__arrow--rigth"
-          onClick={scrollRight}
-        >
-          <img src="./src/images/seta-direita.png" />
+        <button className="team__arrow" onClick={scrollRight}>
+          <img
+            className="team__arrow-right"
+            src="./src/images/seta-direita.png"
+          />
         </button>
       </div>
     </section>
