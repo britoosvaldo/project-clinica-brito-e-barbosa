@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import jussaraLogo from "../../images/jussara-logo.svg";
-import britoLogo from "../../images/brito-e-barbosa-logo.png";
+import britoLogo from "../../images/brito-logo.svg";
 import raciocinioLogo from "../../images/raciocinio-logo.svg";
 
 export default function Header() {
