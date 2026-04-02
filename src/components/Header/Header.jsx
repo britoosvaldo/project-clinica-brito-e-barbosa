@@ -18,6 +18,11 @@ export default function Header() {
 
   return (
     <header className="header">
+      <div
+        className={`nav__overlay ${isOpen ? "active" : ""}`}
+        onClick={() => setIsOpen(false)}
+      />
+
       <nav
         className={`nav ${isOpen ? "nav--open" : ""} ${isScrolled ? "nav--scrolled" : ""}`}
       >

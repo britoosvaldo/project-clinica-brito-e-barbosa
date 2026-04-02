@@ -1,8 +1,8 @@
 .team {
   background-color: #fff0f5;
-  height: 750px;
+  height: 100%;
   font-family: "Roboto";
-  padding: 40px 0;
+  padding: 80px 0;
 }
 
 .team__start {
@@ -145,6 +145,69 @@
 
 .team__arrow:hover {
   opacity: 0.7;
+}
+
+@media screen and (max-width: 1250px) {
+  .team {
+    padding: 60px 0;
+  }
+
+  .team__start {
+    width: 135px;
+    height: 28px;
+  }
+
+  .team__top {
+    font-size: 13px;
+  }
+
+  .team__title {
+    font-size: 32px;
+  }
+
+  .team__subtitle {
+    width: 580px;
+    font-size: 14px;
+  }
+
+  .team__carousel {
+    width: 760px;
+    gap: 15px;
+    height: 450px;
+    margin: 0;
+  }
+
+  .team__cards {
+    height: 450px;
+    gap: 25px;
+  }
+
+  .team__card {
+    width: 295px;
+    height: 420px;
+  }
+
+  .team-card__back {
+    width: 295px;
+    height: 230px;
+  }
+
+  .person__photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .person__name {
+    font-size: 24px;
+  }
+
+  .person__document {
+    font-size: 14px;
+  }
+
+  .person__skills {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 750px) {

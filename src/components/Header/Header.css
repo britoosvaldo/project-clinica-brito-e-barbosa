@@ -11,7 +11,7 @@
   color: #fff;
   height: 100px;
   border-bottom: 1px solid #e3cbcb;
-  z-index: 10;
+  z-index: 15;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 0;
   box-sizing: border-box;
@@ -34,7 +34,7 @@
 .nav__logo1 {
   height: 80px;
   align-self: center;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 30px;
 }
 
 .nav__logo2 {
@@ -100,49 +100,84 @@
   transition: all 0.2s ease;
 }
 
-@media screen and (max-width: 1150px) {
-  .nav__logo {
-    margin: 0 0 0 30px;
-  }
-
-  .nav__links {
-    padding: 0 10px 0 0;
-    column-gap: 30px;
-    font-size: 12px;
-  }
-
-  .nav__button {
-    width: 150px;
-    height: 38px;
-    background-color: #c4213b;
-    border-radius: 10px;
-    color: #fff;
-    border: 1px solid #ffffff;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .nav__logo1 {
-    height: 50px;
-    align-self: center;
-    margin: 0 0 0 10px;
-  }
-
-  .nav__logo2 {
-    width: 100px;
-    align-self: center;
-    margin: 0 0 0 15px;
-  }
-
-  .nav__logo3 {
-    width: 100px;
-    align-self: center;
-    margin: 0 0 0 15px;
+@media screen and (max-width: 1400px) {
+  .nav {
+    z-index: 10;
   }
 
   .nav__toggle {
     display: block;
     align-self: center;
+  }
+
+  .nav__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 8;
+  }
+
+  .nav__overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .nav__links {
+    position: absolute;
+    top: 100px;
+    left: 16px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #fdeef1;
+    padding: 20px;
+    border-radius: 11px;
+    border: 1px solid #333333;
+    z-index: 12;
+  }
+
+  .nav.nav--open .nav__links {
+    display: flex;
+  }
+
+  .nav.nav--open .nav__bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .nav.nav--open .nav__bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav.nav--open .nav__bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav__logo1 {
+    height: 40px;
+    align-self: center;
+    margin: 0 0 0 10px;
+  }
+
+  .nav__logo2 {
+    width: 90px;
+    align-self: center;
+    margin: 0 0 0 10px;
+  }
+
+  .nav__logo3 {
+    width: 100px;
+    align-self: center;
+    margin: 0 0 0 10px;
   }
 
   .nav__links {
@@ -159,19 +194,5 @@
     border-radius: 12px;
     border: 1px solid #333333;
     z-index: 5;
-  }
-
-  .nav.nav--open .nav__links {
-    display: flex;
-  }
-
-  .nav.nav--open .nav__bar:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-  .nav.nav--open .nav__bar:nth-child(2) {
-    opacity: 0;
-  }
-  .nav.nav--open .nav__bar:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
   }
 }

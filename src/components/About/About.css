@@ -4,7 +4,7 @@
   background-color: #fefcf8;
   font-family: "Roboto";
   color: #000000;
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 .about__start {
@@ -167,6 +167,103 @@
 
 li::marker {
   color: #c4213b;
+}
+
+@media screen and (max-width: 1250px) {
+  .about {
+    padding: 60px 0;
+  }
+
+  .about__start {
+    width: 135px;
+    height: 28px;
+  }
+
+  .about__top {
+    font-size: 13px;
+  }
+
+  .about__title {
+    font-size: 32px;
+  }
+
+  .about__subtitle {
+    width: 580px;
+    font-size: 14px;
+  }
+
+  .about__grid {
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows: repeat(2, 280px);
+    gap: 30px 15px;
+  }
+
+  .about-card {
+    width: 220px;
+    height: 280px;
+  }
+
+  .about-card__circle {
+    width: 45px;
+    height: 45px;
+  }
+
+  .about-card__icon {
+    width: 25px;
+    height: 30px;
+  }
+
+  .about-card__title {
+    font-size: 20px;
+    margin: 25px 0;
+  }
+
+  .about-card__description {
+    width: 180px;
+    font-size: 14px;
+  }
+
+  .about-high {
+    grid-template-columns: repeat(2, 350px);
+    width: 690px;
+    height: 280px;
+  }
+
+  .about-high__informations {
+    margin: 10px 0 0 20px;
+  }
+
+  .about-high__title {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+
+  .about-high__subtitle {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .about-high__list {
+    font-size: 14px;
+  }
+
+  .about-high__cards {
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: repeat(2, 90px);
+    gap: 15px;
+  }
+
+  .about-high__card {
+    width: 130px;
+  }
+
+  .about-high__number {
+    font-size: 22px;
+  }
+
+  .about-high__text {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 750px) {

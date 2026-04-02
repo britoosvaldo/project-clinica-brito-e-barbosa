@@ -13,7 +13,7 @@
     "photo button";
   justify-content: center;
   align-items: center;
-  padding: 120px 20px 60px;
+  padding: 200px 0 80px 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
@@ -101,27 +101,45 @@
   padding-left: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
   .main {
-    grid-template-columns: 1fr 1fr;
+    min-height: 540px;
+    grid-template-columns: 280px 420px;
     column-gap: 40px;
-    padding: 100px 20px 50px;
+    padding: 150px 0 80px 0;
   }
 
   .main__photo {
-    width: 100%;
-  }
-
-  .main__photo img {
-    max-width: 340px;
+    width: 280px;
   }
 
   .main__title {
-    font-size: 38px;
+    grid-area: title;
+    font-size: 32px;
   }
 
   .main__subtitle {
-    font-size: 18px;
+    font-size: 14px;
+  }
+
+  .main__bt-budget,
+  .main__bt-specialities {
+    height: 38px;
+
+    font-size: 12px;
+  }
+
+  .main__bt-budget {
+    width: 181px;
+  }
+
+  .main__bt-specialities {
+    width: 183px;
+  }
+
+  .bt__icon {
+    padding-left: 7px;
+    width: 15px;
   }
 }
 
