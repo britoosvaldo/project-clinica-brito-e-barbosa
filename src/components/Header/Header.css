@@ -4,10 +4,11 @@
   left: 0;
   right: 0;
   width: 100%;
-  transition: all 0.3s ease-in-out;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
+  align-items: center;
   color: #fff;
   height: 100px;
   border-bottom: 1px solid #e3cbcb;
@@ -15,6 +16,7 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .nav.nav--scrolled {
@@ -28,24 +30,19 @@
 
 .nav__logos {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 0 20px;
+  min-width: 0;
+  max-width: calc(100% - 60px);
 }
 
-.nav__logo1 {
-  height: 80px;
-  align-self: center;
-  margin: 0 0 0 30px;
-}
-
-.nav__logo2 {
-  width: 230px;
-  align-self: center;
-  margin: 0 0 0 15px;
-}
-
+.nav__logo1,
+.nav__logo2,
 .nav__logo3 {
-  align-self: center;
-  margin: 0 0 0 15px;
+  margin: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 .nav__links {
@@ -162,22 +159,30 @@
 }
 
 @media screen and (max-width: 750px) {
+  .nav {
+    padding: 0 10px;
+  }
+
+  .nav__logos {
+    gap: 8px;
+    max-width: calc(100% - 56px);
+  }
+
   .nav__logo1 {
     height: 40px;
-    align-self: center;
-    margin: 0 0 0 10px;
   }
 
   .nav__logo2 {
     width: 90px;
-    align-self: center;
-    margin: 0 0 0 10px;
   }
 
   .nav__logo3 {
     width: 100px;
-    align-self: center;
-    margin: 0 0 0 10px;
+  }
+
+  .nav__toggle {
+    margin-right: 0;
+    flex-shrink: 0;
   }
 
   .nav__links {
