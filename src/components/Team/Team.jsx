@@ -1,4 +1,8 @@
 import { useRef } from "react";
+import setaEsq from "../../images/seta-esq-icon.svg";
+import setaDir from "../../images/seta-dir-icon.svg";
+import fotoGabi from "../../images/foto-gabi.svg";
+import fotoJussara from "../../images/foto-jussara.svg";
 
 export default function Team() {
   const trackRef = useRef(null);
@@ -32,16 +36,13 @@ export default function Team() {
 
       <div className="team__carousel">
         <button className="team__arrow" onClick={scrollLeft}>
-          <img
-            className="team__arrow-left"
-            src="./src/images/seta-esquerda.png"
-          />
+          <img className="team__arrow-left" src={setaEsq} />
         </button>
 
         <div className="team__cards" ref={trackRef}>
           <div className="team__card">
             <div className="team-card__back">
-              <img className="person__photo" src="./src/images/jussara.png" />
+              <img className="person__photo" src={fotoJussara} />
             </div>
             <h4 className="person__name">Jussara Barbosa</h4>
             <p className="person__document">CRP ...</p>
@@ -52,7 +53,7 @@ export default function Team() {
 
           <div className="team__card">
             <div className="team-card__back">
-              <img className="person__photo" src="./src/images/gabi.png" />
+              <img className="person__photo" src={fotoGabi} />
             </div>
             <h4 className="person__name">Gabrielle Brito</h4>
             <p className="person__document">CRP 20/12029</p>
@@ -62,27 +63,17 @@ export default function Team() {
           </div>
           <div className="team__card">
             <div className="team-card__back">
-              <img className="person__photo" src="./src/images/gabi.png" />
+              <img className="person__photo" src={fotoJussara} />
             </div>
-            <h4 className="person__name">Gabrielle Brito</h4>
-            <p className="person__document">CRP 20/12029</p>
+            <h4 className="person__name">Jussara Barbosa</h4>
+            <p className="person__document">CRP ...</p>
             <p className="person__skills">
               Neuropsicóloga<br></br>TCC
             </p>
           </div>
           <div className="team__card">
             <div className="team-card__back">
-              <img className="person__photo" src="./src/images/gabi.png" />
-            </div>
-            <h4 className="person__name">Gabrielle Brito</h4>
-            <p className="person__document">CRP 20/12029</p>
-            <p className="person__skills">
-              Neuropsicóloga<br></br>TCC
-            </p>
-          </div>
-          <div className="team__card">
-            <div className="team-card__back">
-              <img className="person__photo" src="./src/images/gabi.png" />
+              <img className="person__photo" src={fotoGabi} />
             </div>
             <h4 className="person__name">Gabrielle Brito</h4>
             <p className="person__document">CRP 20/12029</p>
@@ -92,10 +83,7 @@ export default function Team() {
           </div>
         </div>
         <button className="team__arrow" onClick={scrollRight}>
-          <img
-            className="team__arrow-right"
-            src="./src/images/seta-direita.png"
-          />
+          <img className="team__arrow-right" src={setaDir} />
         </button>
       </div>
     </section>

@@ -1,12 +1,13 @@
 import useRevealOnScroll from "../../hooks/useRevealOnScroll";
 import arrowIcon from "../../images/arrow-icon.svg";
+import fotoMain from "../../images/foto-main.svg";
 
 export default function Main() {
   useRevealOnScroll();
 
   return (
     <main className="main" style={{ "--delay": "0ms" }}>
-      <img className="main__photo" src="./src/images/header-img.png"></img>
+      <img className="main__photo" src={fotoMain}></img>
       <h1 className="main__title">
         Importância da <span>Saúde Mental</span>
       </h1>
