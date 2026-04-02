@@ -1,6 +1,4 @@
 .about {
-  width: 100%;
-  height: 100%;
   background-color: #fefcf8;
   font-family: "Roboto";
   color: #000000;
@@ -171,7 +169,7 @@ li::marker {
 
 @media screen and (max-width: 1250px) {
   .about {
-    padding: 60px 0;
+    padding: 65px 0;
   }
 
   .about__start {
@@ -267,14 +265,10 @@ li::marker {
 }
 
 @media screen and (max-width: 750px) {
-  .about {
-    padding: 20px 0;
-  }
-
   .about__start {
     width: 125px;
     height: 20px;
-    margin: 20px 0 20px 0;
+    margin: 0 0 20px 0;
   }
 
   .about__top {

@@ -112,7 +112,7 @@
 
 @media screen and (max-width: 1250px) {
   .specialities {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .specialities__start {
@@ -178,7 +178,7 @@
   .specialities__start {
     width: 125px;
     height: 20px;
-    margin: 40px 0 20px 0;
+    margin: 0 0 20px 0;
   }
 
   .specialities__top {
@@ -196,7 +196,7 @@
   }
 
   .specialities__grid {
-    margin: 30px 0 50px 0;
+    margin: 30px 0 10px 0;
     gap: 10px;
     grid-template-columns: repeat(1, 240px);
     grid-template-rows: repeat(8, 135px);

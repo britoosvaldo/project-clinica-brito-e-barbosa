@@ -1,6 +1,5 @@
 .team {
   background-color: #fff0f5;
-  height: 100%;
   font-family: "Roboto";
   padding: 80px 0;
 }
@@ -149,7 +148,7 @@
 
 @media screen and (max-width: 1250px) {
   .team {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .team__start {
@@ -211,15 +210,10 @@
 }
 
 @media screen and (max-width: 750px) {
-  .team {
-    padding: 20px 0;
-    height: 100%;
-  }
-
   .team__start {
     width: 125px;
     height: 20px;
-    margin: 20px 0 20px 0;
+    margin: 0 0 20px 0;
   }
 
   .team__top {
