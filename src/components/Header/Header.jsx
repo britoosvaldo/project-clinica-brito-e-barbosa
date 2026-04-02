@@ -96,7 +96,15 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
               style={{ textDecoration: "none" }}
             >
-              <button className="nav__link nav__button">
+              <button
+                className="nav__link nav__button"
+                onClick={() =>
+                  window.open(
+                    "https://wa.me/5595999677633?text=Olá,%20gostaria%20de%20agendar%20um%20atendimento",
+                    "_blank",
+                  )
+                }
+              >
                 Agendar Consulta
               </button>
             </a>

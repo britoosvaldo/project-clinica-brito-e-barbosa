@@ -30,7 +30,11 @@ export default function Footer() {
               <img src={whatsIcon} className="footer__social-icon" alt="" />
             </a>
 
-            <a href="/" className="footer__social" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/clinicajussarabarbosa/"
+              className="footer__social"
+              aria-label="Instagram"
+            >
               <img src={instaIcon} className="footer__social-icon" alt="" />
             </a>
           </div>

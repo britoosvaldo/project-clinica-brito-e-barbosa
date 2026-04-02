@@ -4,6 +4,7 @@ import Specialities from "../Specialities/Specialities";
 import About from "../About/About";
 import Team from "../Team/Team";
 import Footer from "../Footer/Footer";
+import WhatsAppButton from "../WhatsApp/WhatsButton";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Team />
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

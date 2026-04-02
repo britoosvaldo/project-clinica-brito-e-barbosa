@@ -26,7 +26,15 @@ export default function Main() {
         maturidade — é um ato de amor consigo mesmo.
       </p>
       <div className="main__buttons">
-        <button className="main__bt-budget">
+        <button
+          className="main__bt-budget"
+          onClick={() =>
+            window.open(
+              "https://wa.me/5595999677633?text=Olá,%20gostaria%20de%20agendar%20um%20atendimento",
+              "_blank",
+            )
+          }
+        >
           Agendar Atendimento
           <img className="bt__icon" src={arrowIcon} />
         </button>
