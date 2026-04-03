@@ -11,10 +11,9 @@
   display: flex;
   background-color: #ffc2d5;
   border-radius: 20px;
-  justify-self: center;
   align-self: center;
   justify-content: center;
-  margin: 0 0 20px 0;
+  margin: 0 auto 20px;
   font-family: "AR One Sans";
 }
 
@@ -25,23 +24,18 @@
 }
 
 .team__title {
-  display: flex;
-  align-self: center;
-  justify-self: center;
+  text-align: center;
   font-size: 36px;
   font-family: "AR One Sans";
   color: #c4213b;
-  margin: 0 0 20px 0;
+  margin: 0 auto 20px;
 }
 
 .team__subtitle {
-  display: flex;
   width: 650px;
   text-align: center;
-  align-self: center;
-  justify-self: center;
   font-size: 18px;
-  margin: 0 0 30px 0;
+  margin: 0 auto 30px;
   color: #8d8d8d;
   font-family: "AR One Sans";
 }
@@ -213,7 +207,6 @@
   .team__start {
     width: 125px;
     height: 20px;
-    margin: 0 0 20px 0;
   }
 
   .team__top {
@@ -226,28 +219,37 @@
 
   .team__subtitle {
     width: 275px;
-    margin: 0 0 30px 0;
     font-size: 14px;
   }
 
   .team__carousel {
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
-    width: 361px;
-    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    gap: 8px;
     height: 400px;
-    margin: 0 60px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
 
   .team__cards {
+    display: flex;
+    align-items: center;
     height: 400px;
-    gap: 30px;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    width: 270px;
   }
 
   .team__card {
     width: 265px;
     height: 340px;
+    margin: 0;
   }
 
   .team-card__back {
@@ -260,31 +262,16 @@
     height: 120px;
   }
 
-  .team__card:hover .person__photo {
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-  }
-
   .person__name {
     font-size: 22px;
-    font-weight: bold;
-    margin: 0;
-    padding: 20px 0 0 0;
-    color: #c4213b;
   }
 
   .person__document {
     font-size: 12px;
-    margin: 0;
-    color: #8d8d8d;
   }
 
   .person__skills {
     font-size: 16px;
-    margin: 0;
-    padding: 30px 0 0 0;
-    text-align: center;
   }
 
   .team__arrow-left,
