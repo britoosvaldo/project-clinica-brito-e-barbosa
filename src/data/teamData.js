@@ -16,4 +16,11 @@ export const cardsData = [
     document: "CRP nº xxxx",
     skills: "Neuropsicóloga",
   },
+  {
+    id: 3,
+    photo: gabiPhoto,
+    title: "Gabrielle Brito",
+    document: "CRP nº xxxx",
+    skills: "Neuropsicóloga",
+  },
 ];
