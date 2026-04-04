@@ -1,57 +1,31 @@
-import missaoIcon from "../../images/missao-icon.svg";
-import visaoIcon from "../../images/visao-icon.svg";
-import valoresIcon from "../../images/valores-icon.svg";
+import { valuesData } from "../../data/aboutData";
 
 export default function About() {
   return (
-    <section className="about" id="about">
-      <div className="about__start">
-        <h2 className="about__top">Conheça-nos</h2>
+    <section className="about reveal" id="about">
+      <div className="about__start reveal">
+        <h2 className="about__top reveal">Conheça-nos</h2>
       </div>
 
-      <h3 className="about__title">Sobre Nós</h3>
+      <h3 className="about__title reveal">Sobre Nós</h3>
 
       <p className="about__subtitle reveal">
         Nossa clínica foi criada com o propósito de oferecer um espaço acolhedor
         e seguro para o cuidado da saúde mental.
       </p>
 
-      <div className="about__grid">
-        <div className="about-card">
-          <div className="about-card__circle">
-            <img src={missaoIcon} className="about-card__icon" />
+      <div className="about__grid reveal">
+        {valuesData.map((value) => (
+          <div className="about-card reveal" key={value.id}>
+            <div className="about-card__circle">
+              <img src={value.icon} className="about-card__icon" />
+            </div>
+            <h3 className="about-card__title">{value.title}</h3>
+            <p className="about-card__description">{value.description}</p>
           </div>
-          <h3 className="about-card__title">Missão</h3>
-          <p className="about-card__description">
-            Promover a saúde mental, o autoconhecimento e o desenvolvimento de
-            potencialidades através de atendimento especializado e humanizado.
-          </p>
-        </div>
+        ))}
 
-        <div className="about-card">
-          <div className="about-card__circle">
-            <img src={visaoIcon} className="about-card__icon" />
-          </div>
-          <h3 className="about-card__title">Visão</h3>
-          <p className="about-card__description">
-            Ser referência em saúde mental, sendo a escolha preferida dos
-            pacientes, profissionais e comunidade por nossa excelência e
-            cuidado.
-          </p>
-        </div>
-
-        <div className="about-card">
-          <div className="about-card__circle">
-            <img src={valoresIcon} className="about-card__icon" />
-          </div>
-          <h3 className="about-card__title">Valores</h3>
-          <p className="about-card__description">
-            Busca contínua por aprimoramento, comprometimento com a ética,
-            respeito à individualidade e excelência dos serviços prestados.
-          </p>
-        </div>
-
-        <div className="about-high">
+        <div className="about-high reveal">
           <div className="about-high__informations">
             <h3 className="about-high__title">Por que nos escolher?</h3>
             <p className="about-high__subtitle">
@@ -72,7 +46,7 @@ export default function About() {
               <li className="about-high__item">Sigilo e ética profissional</li>
             </ul>
           </div>
-          <div className="about-high__cards">
+          <div className="about-high__cards reveal">
             <div className="about-high__card">
               <h3 className="about-high__number">500+</h3>
               <p className="about-high__text">Pacientes Atendidos</p>
