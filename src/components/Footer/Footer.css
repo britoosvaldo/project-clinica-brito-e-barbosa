@@ -107,6 +107,11 @@
   align-self: center;
 }
 
+.footer__adress {
+  text-decoration: none;
+  color: #d9d9d9;
+}
+
 @media screen and (max-width: 750px) {
   .footer {
     padding: 45px 24px 40px;

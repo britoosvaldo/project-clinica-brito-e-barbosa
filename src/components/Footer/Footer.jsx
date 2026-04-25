@@ -26,7 +26,11 @@ export default function Footer() {
           </p>
 
           <div className="footer__socials">
-            <a href="/" className="footer__social" aria-label="WhatsApp">
+            <a
+              href="https://wa.me/5595999677633?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20agendar%20um%20atendimento"
+              className="footer__social"
+              aria-label="WhatsApp"
+            >
               <img src={whatsIcon} className="footer__social-icon" alt="" />
             </a>
 
@@ -46,11 +50,16 @@ export default function Footer() {
           <ul className="footer__contact-list">
             <li className="footer__contact-item">
               <img src={mapIcon} className="footer__icon" />
-              <span>
-                Rua do Genipapeiro, 970 - Caçari
-                <br />
-                Boa Vista - RR
-              </span>
+              <a
+                href="https://maps.app.goo.gl/eN9AEXKzvsocSvoG9"
+                className="footer__adress"
+              >
+                <span>
+                  Rua do Genipapeiro, 970 - Caçari
+                  <br />
+                  Boa Vista - RR
+                </span>
+              </a>
             </li>
 
             <li className="footer__contact-item">
