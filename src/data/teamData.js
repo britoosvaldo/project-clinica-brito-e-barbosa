@@ -1,11 +1,11 @@
-import jussaraPhoto from "../images/photo-jussara.svg";
-import gabiPhoto from "../images/photo-gabi.svg";
-import eduardaPhoto from "../images/photo-eduarda.svg";
-import eikiPhoto from "../images/photo-eiki.svg";
-import jeisePhoto from "../images/photo-jeize.svg";
-import rozePhoto from "../images/photo-roze.svg";
-import juliaPhoto from "../images/photo-julia.svg";
-import otavioPhoto from "../images/photo-med.svg";
+import jussaraPhoto from "../images/photo-jussara.webp";
+import gabiPhoto from "../images/photo-gabi.webp";
+import eduardaPhoto from "../images/photo-eduarda.webp";
+import eikiPhoto from "../images/photo-eiki.webp";
+import jeisePhoto from "../images/photo-jeize.webp";
+import rozePhoto from "../images/photo-roze.webp";
+import juliaPhoto from "../images/photo-julia.webp";
+import otavioPhoto from "../images/photo-otavio.webp";
 
 export const cardsData = [
   {
