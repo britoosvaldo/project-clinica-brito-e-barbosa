@@ -11,54 +11,57 @@ export const specialitiesData = [
   {
     id: 1,
     icon: autismoIcon,
-    title: "Autismo",
+    title: "Avaliação Neuropsicológica",
     description:
-      "Avaliação e acompanhamento especializado para o espectro autista.",
+      "Investiga como o cérebro influencia comportamento, emoções e cognição.",
   },
   {
     id: 2,
     icon: ansiedadeIcon,
-    title: "Ansiedade",
+    title: "Psicoterapia",
     description:
-      "Tratamento para transtornos de ansiedade e síndrome do pânico.",
+      "Promove a saúde mental e bem-estar emocional através do acolhimento e estratégias práticas cotidianas.",
   },
   {
     id: 3,
     icon: terapiaIcon,
-    title: "Terapia Familiar",
+    title: "Orientação para Pais",
     description:
-      "Mediação de conflitos e fortalecimento dos vínculos familiares.",
+      "Auxilia responsáveis a lidarem com desafios da parentalidade, oferecendo estratégias práticas para o desenvolvimento saudável da criança.",
   },
   {
     id: 4,
     icon: depressaoIcon,
-    title: "Depressão",
-    description: "Suporte emocional e tratamento para quadros depressivos.",
+    title: "Reabilitação Neurocognitiva",
+    description:
+      "Indicada para pessoas com alterações cognitivas decorrentes de condições neurológicas.",
   },
   {
     id: 5,
     icon: conhecimentoIcon,
-    title: "Autoconhecimento",
-    description: "Jornada de descoberta pessoal e desenvolvimento emocional.",
+    title: "Acompanhamento Escolar",
+    description:
+      "Estimula o desenvolvimento cognitivo e auxilia no aprendizado de alfabetização, português e matemática. Promovendo organização, autonomia e melhor desempenho escolar.",
   },
   {
     id: 6,
     icon: burnoutIcon,
-    title: "Burnout",
+    title: "Orientação Profissional",
     description:
-      "Tratamanento para esgotamento profissional e estresse crônico",
+      "Ajuda jovens e adultos na escolha de carreira, identificando habilidades, interesses e possibilidades profissionais.",
   },
   {
     id: 7,
     icon: neuroIcon,
-    title: "Neuropsicologia",
-    description: "Avaliação neuropsicológica e reabilitação cognitiva.",
+    title: "Psicopedagogia",
+    description:
+      "Desenvolve estratégias personalizadas para superar dificuldades de aprendizagem e melhorar o desempenho cognitivo, pedagógico e emocional.",
   },
   {
     id: 8,
     icon: psicoIcon,
-    title: "Psicoterapia",
+    title: "Avaliação Psicológica",
     description:
-      "Atendimento individualizado para diversas demandas emocionais.",
+      "Processo que utiliza testes e entrevistas para compreender aspectos emocionais e comportamentais, auxiliando no diagnóstico e planejamento do tratamento.",
   },
 ];

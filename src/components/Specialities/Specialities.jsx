@@ -20,19 +20,29 @@ export default function Services() {
       <div className="specialities__grid reveal">
         {specialitiesData.map((specialitie) => (
           <div className="specialities-card reveal" key={specialitie.id}>
-            <div className="specialities-card__circle">
-              <img
-                className="specialities-card__icon"
-                src={specialitie.icon}
-                alt={specialitie.title}
-              />
+            <div className="specialities-card__inner">
+              {/* Frente */}
+              <div className="specialities-card__front">
+                <div className="specialities-card__circle">
+                  <img
+                    className="specialities-card__icon"
+                    src={specialitie.icon}
+                    alt={specialitie.title}
+                  />
+                </div>
+                <div className="specialities-card__divider" />
+                <h3 className="specialities-card__title">
+                  {specialitie.title}
+                </h3>
+              </div>
+
+              {/* Verso */}
+              <div className="specialities-card__back">
+                <p className="specialities-card__description">
+                  {specialitie.description}
+                </p>
+              </div>
             </div>
-
-            <h3 className="specialities-card__title">{specialitie.title}</h3>
-
-            <p className="specialities-card__description">
-              {specialitie.description}
-            </p>
           </div>
         ))}
       </div>
