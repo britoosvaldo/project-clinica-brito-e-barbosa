@@ -9,22 +9,24 @@ export default function Main() {
     <main className="main" style={{ "--delay": "0ms" }}>
       <img className="main__photo" src={fotoMain}></img>
       <h1 className="main__title">
-        Importância da <span>Saúde Mental</span>
+        Cuidar da <span>Saúde Mental</span> é Cuidar da Vida
       </h1>
       <p className="main__subtitle">
-        A saúde mental é um dos pilares fundamentais para uma vida equilibrada.
-        Ela influencia diretamente nossa capacidade de lidar com emoções,
-        enfrentar desafios, manter relacionamentos saudáveis e tomar decisões
-        conscientes. Quando cuidamos da mente, fortalecemos nossa autoestima,
-        ampliamos nossa clareza emocional e criamos espaço para viver com mais
-        leveza, foco e bem-estar.
+        A saúde mental influencia diretamente nossa forma de pensar, sentir,
+        agir e nos relacionar. Por isso, em nossa clínica, adotamos um olhar
+        integrado do funcionamento cognitivo, emocional e comportamental,
+        compreendendo cada pessoa de maneira única para promover intervenções
+        mais eficazes e humanizadas.
         <br />
         <br />
-        Assim como cuidamos do corpo, também precisamos dedicar atenção à mente.
-        Buscar apoio psicológico, praticar o autocuidado e reconhecer nossos
-        limites são atitudes essenciais para prevenir o adoecimento emocional.
-        Investir na saúde mental não é sinal de fraqueza, mas sim de coragem e
-        maturidade — é um ato de amor consigo mesmo.
+        Atendemos todas as faixas etárias — da primeira infância à terceira
+        idade — respeitando as necessidades e particularidades de cada etapa da
+        vida.Atendemos todas as faixas etárias — da primeira infância à terceira
+        idade — respeitando as necessidades e particularidades de cada etapa da
+        vida.Nossa equipe é pautada na ética, na ciência e na excelência do
+        cuidado, oferecendo um atendimento acolhedor, qualificado e comprometido
+        com o bem-estar, o desenvolvimento e a qualidade de vida de cada
+        paciente.
       </p>
       <div className="main__buttons">
         <button
